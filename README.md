@@ -1,3 +1,17 @@
+
+```
+# development
+yarn dev
+
+./bin/build
+./bin/start
+
+
+MB_DB_CONNECTION_URI=postgres://dev_jose_user:6ZSiCkQe8QOjpFKIFJJkGAiaAla3Pzft@dpg-cdtilcla49935kie6b90-a.oregon-postgres.render.com/dev_jose yarn dev
+```
+
+Then go to http://localhost:3000/
+
 # Metabase
 
 [Metabase](https://www.metabase.com) is the easy, open-source way for everyone in your company to ask questions and learn from data.

@@ -63,6 +63,11 @@ const AppBarLarge = ({
         <AppBarRightContainer>
           {isSearchVisible && <SearchBar />}
           {isNewButtonVisible && <NewItemButton collectionId={collectionId} />}
+
+          <a className="link" href="/dash">
+            API
+          </a>
+
           {isProfileLinkVisible && (
             <AppBarProfileLinkContainer>
               <ProfileLink user={currentUser} onLogout={onLogout} />

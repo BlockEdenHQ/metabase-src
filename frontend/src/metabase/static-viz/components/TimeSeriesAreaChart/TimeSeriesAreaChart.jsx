@@ -46,7 +46,7 @@ const layout = {
     family: "Lato, sans-serif",
   },
   colors: {
-    brand: "#509ee3",
+    brand: "#de4c4f",
     brandLight: "#DDECFA",
     textLight: "#b8bbc3",
     textMedium: "#949aab",

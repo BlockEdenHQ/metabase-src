@@ -90,7 +90,7 @@ export default {
     );
     const fields = isSsoUser
       ? [getLocaleField()]
-      : [...getNameFields(), getEmailField(), getLocaleField()];
+      : [...getNameFields(), getLocaleField()];
 
     return {
       fields,

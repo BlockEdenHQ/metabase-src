@@ -9,7 +9,7 @@ import {
 } from "./utils/settings";
 
 const defaultColors = {
-  brand: "#509ee3",
+  brand: "#de4c4f",
   brandLight: "#ddecfa",
   textLight: "#b8bbc3",
   textMedium: "#949aab",

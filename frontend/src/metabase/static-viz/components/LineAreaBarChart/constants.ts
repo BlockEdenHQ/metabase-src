@@ -23,7 +23,7 @@ export const LINE_AREA_BAR_DEFAULT_OPTIONS_1 = {
   series: [
     {
       name: "line series",
-      color: "#509ee3",
+      color: "#de4c4f",
       yAxisPosition: "left",
       type: "line",
       data: [
@@ -114,7 +114,7 @@ export const LINE_AREA_BAR_DEFAULT_OPTIONS_2 = {
   series: [
     {
       name: "line series",
-      color: "#509ee3",
+      color: "#de4c4f",
       yAxisPosition: "right",
       type: "line",
       data: [
@@ -188,7 +188,7 @@ export const LINE_AREA_BAR_DEFAULT_OPTIONS_3 = {
   series: [
     {
       name: "line series",
-      color: "#509ee3",
+      color: "#de4c4f",
       yAxisPosition: "left",
       type: "line",
       data: [
@@ -252,7 +252,7 @@ export const LINE_AREA_BAR_DEFAULT_OPTIONS_4 = {
   series: [
     {
       name: "series 1",
-      color: "#509ee3",
+      color: "#de4c4f",
       yAxisPosition: "left",
       type: "area",
       data: [
@@ -325,7 +325,7 @@ export const LINE_AREA_BAR_DEFAULT_OPTIONS_5 = {
   series: [
     {
       name: "bar series",
-      color: "#509ee3",
+      color: "#de4c4f",
       yAxisPosition: "left",
       type: "bar",
       data: _.range(48).map(n => [`bar ${n + 1}`, n + 1]),
@@ -349,7 +349,7 @@ export const LINE_AREA_BAR_DEFAULT_OPTIONS_6 = {
   series: [
     {
       name: "bar series",
-      color: "#509ee3",
+      color: "#de4c4f",
       yAxisPosition: "left",
       type: "bar",
       data: _.range(200).map(n => [`bar ${n + 1}`, n + 1]),
@@ -373,7 +373,7 @@ export const LINE_AREA_BAR_DEFAULT_OPTIONS_7 = {
   series: [
     {
       name: "bar series",
-      color: "#509ee3",
+      color: "#de4c4f",
       yAxisPosition: "left",
       type: "bar",
       data: _.range(20).map(n => [`bar ${n + 1}`, n + 1]),

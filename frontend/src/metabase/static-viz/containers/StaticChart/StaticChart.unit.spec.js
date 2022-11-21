@@ -103,7 +103,7 @@ describe("StaticChart", () => {
             ["cronut", 3100],
           ],
           colors: {
-            donut: "#509EE3",
+            donut: "#de4c4f",
             cronut: "#DDECFA",
           },
           settings: {

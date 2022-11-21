@@ -7,10 +7,10 @@ export const ACCENT_COUNT = 8;
 // NOTE: KEEP SYNCRONIZED WITH COLORS.CSS
 /* eslint-disable no-color-literals */
 export const colors: ColorPalette = {
-  brand: "#509EE3",
+  brand: "#de4c4f",
   summarize: "#88BF4D",
   filter: "#7172AD",
-  accent0: "#509EE3",
+  accent0: "#de4c4f",
   accent1: "#88BF4D",
   accent2: "#A989C5",
   accent3: "#EF8C8C",

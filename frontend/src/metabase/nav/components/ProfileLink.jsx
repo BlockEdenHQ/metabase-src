@@ -26,11 +26,11 @@ export default connect(mapStateToProps)(ProfileLink);
 
 function ProfileLink({ user, adminItems, onLogout }) {
   const [modalOpen, setModalOpen] = useState(null);
-  const [bugReportDetails, setBugReportDetails] = useState(null);
+  const [_bugReportDetails, setBugReportDetails] = useState(null);
 
-  const openModal = modalName => {
-    setModalOpen(modalName);
-  };
+  // const openModal = modalName => {
+  //   setModalOpen(modalName);
+  // };
 
   const closeModal = () => {
     setModalOpen(null);
@@ -38,11 +38,11 @@ function ProfileLink({ user, adminItems, onLogout }) {
 
   const generateOptionsForUser = () => {
     const { tag } = MetabaseSettings.get("version");
-    const isAdmin = user.is_superuser;
+    // const isAdmin = user.is_superuser;
     const showAdminSettingsItem = adminItems?.length > 0;
-    const compactBugReportDetailsForUrl = encodeURIComponent(
-      JSON.stringify(bugReportDetails),
-    );
+    // const compactBugReportDetailsForUrl = encodeURIComponent(
+    //   JSON.stringify(bugReportDetails),
+    // );
 
     return [
       {
@@ -63,29 +63,29 @@ function ProfileLink({ user, adminItems, onLogout }) {
         link: "/activity",
         event: `Navbar;Profile Dropdown;Activity ${tag}`,
       },
-      {
-        title: t`Help`,
-        icon: null,
-        link:
-          isAdmin && MetabaseSettings.isPaidPlan()
-            ? `https://www.metabase.com/help-premium?utm_source=in-product&utm_medium=menu&utm_campaign=help&instance_version=${tag}&diag=${compactBugReportDetailsForUrl}`
-            : `https://www.metabase.com/help?utm_source=in-product&utm_medium=menu&utm_campaign=help&instance_version=${tag}`,
-
-        externalLink: true,
-        event: `Navbar;Profile Dropdown;About ${tag}`,
-      },
-      {
-        title: t`About Metabase`,
-        icon: null,
-        action: () => openModal("about"),
-        event: `Navbar;Profile Dropdown;About ${tag}`,
-      },
-      {
-        title: t`Sign out`,
-        icon: null,
-        action: () => onLogout(),
-        event: `Navbar;Profile Dropdown;Logout`,
-      },
+      // {
+      //   title: t`Help`,
+      //   icon: null,
+      //   link:
+      //     isAdmin && MetabaseSettings.isPaidPlan()
+      //       ? `https://www.metabase.com/help-premium?utm_source=in-product&utm_medium=menu&utm_campaign=help&instance_version=${tag}&diag=${compactBugReportDetailsForUrl}`
+      //       : `https://www.metabase.com/help?utm_source=in-product&utm_medium=menu&utm_campaign=help&instance_version=${tag}`,
+      //
+      //   externalLink: true,
+      //   event: `Navbar;Profile Dropdown;About ${tag}`,
+      // },
+      // {
+      //   title: t`About Metabase`,
+      //   icon: null,
+      //   action: () => openModal("about"),
+      //   event: `Navbar;Profile Dropdown;About ${tag}`,
+      // },
+      // {
+      //   title: t`Sign out`,
+      //   icon: null,
+      //   action: () => onLogout(),
+      //   event: `Navbar;Profile Dropdown;Logout`,
+      // },
     ].filter(Boolean);
   };
 

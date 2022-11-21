@@ -106,7 +106,7 @@ describe("calculateStackedItems", () => {
   const series: Series[] = [
     {
       name: "series 1",
-      color: "#509ee3",
+      color: "#de4c4f",
       yAxisPosition: "left",
       type: "area",
       data: [

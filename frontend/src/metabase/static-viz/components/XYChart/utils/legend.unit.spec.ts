@@ -1,7 +1,7 @@
 import { YAxisPosition } from "./../types";
 import { getLegendColumns } from "./legend";
 
-const defaultColor = "#509ee3";
+const defaultColor = "#de4c4f";
 
 const createSeries = ({
   name = "line",
@@ -38,8 +38,8 @@ describe("getLegendColumns", () => {
     const { leftColumn, rightColumn } = getLegendColumns(series);
 
     expect(leftColumn).toStrictEqual([
-      { color: "#509ee3", name: "line 1" },
-      { color: "#509ee3", name: "line 2" },
+      { color: "#de4c4f", name: "line 1" },
+      { color: "#de4c4f", name: "line 2" },
     ]);
     expect(rightColumn).toHaveLength(0);
   });
@@ -55,14 +55,14 @@ describe("getLegendColumns", () => {
     const { leftColumn, rightColumn } = getLegendColumns(series);
 
     expect(leftColumn).toStrictEqual([
-      { color: "#509ee3", name: "line left 1" },
-      { color: "#509ee3", name: "line left 2" },
+      { color: "#de4c4f", name: "line left 1" },
+      { color: "#de4c4f", name: "line left 2" },
     ]);
 
     expect(rightColumn).toStrictEqual([
-      { color: "#509ee3", name: "line right 1" },
-      { color: "#509ee3", name: "line right 2" },
-      { color: "#509ee3", name: "line right 3" },
+      { color: "#de4c4f", name: "line right 1" },
+      { color: "#de4c4f", name: "line right 2" },
+      { color: "#de4c4f", name: "line right 3" },
     ]);
   });
 });
