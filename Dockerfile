@@ -6,7 +6,7 @@ FROM metabase/ci:java-11-clj-1.11.0.1100.04-2022-build as builder
 
 ARG MB_EDITION=oss
 
-WORKDIR /home/circleci
+WORKDIR /Users/tp-mini/projects/blockroma-metabase
 
 COPY --chown=circleci . .
 RUN INTERACTIVE=false CI=true MB_EDITION=$MB_EDITION bin/build
@@ -35,7 +35,7 @@ RUN apk add -U bash ttf-dejavu fontconfig curl java-cacerts && \
     mkdir -p /plugins && chmod a+rwx /plugins
 
 # add Metabase script and uberjar
-COPY --from=builder /home/circleci/target/uberjar/metabase.jar /app/
+COPY --from=builder /Users/tp-mini/projects/blockroma-metabase/target/uberjar/metabase.jar /app/
 COPY bin/docker/run_metabase.sh /app/
 
 # expose our default runtime port
