@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { t } from "ttag";
 import AuthLayout from "../../containers/AuthLayout";
 import { AuthProvider } from "../../types";
@@ -21,6 +21,12 @@ const Login = ({
   redirectUrl,
 }: LoginProps): JSX.Element => {
   const selection = getSelectedProvider(providers, providerName);
+
+  useEffect(() => {
+    window.location.replace(
+      "https://blockeden.xyz/dash/login/?next=%2Fanalytics%2F",
+    );
+  }, []);
 
   return (
     <AuthLayout>
